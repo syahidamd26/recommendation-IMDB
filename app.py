@@ -46,6 +46,6 @@ if st.button('Recommend Me Movies'):
             st.image(link, caption=title, width=150)
 
     st.write('Dataset Detail')
-    st.dataframe(st.session_state['data'].loc[rec_idx][['Series_Title','tag']])
+    st.dataframe(st.session_state['data'].loc[rec_idx][['Series_Title', 'Genre', 'Director','tag']])
 else:
     st.write('Waiting')
